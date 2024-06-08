@@ -10,13 +10,26 @@ body{
 
 .grid{
     display:grid;
-    grid-template-columns: 1fr 2fr 2fr;
     gap:64px;
+}
+
+.img-responsive{
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.grid-2-columns{
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns-with-first-narrow{
+    grid-template-columns: 1fr 2fr 2fr;
 }
 
 section{
     max-width:1200px;
     margin: 0 auto;
+    padding:100px 0;
 }
 
 header{
@@ -66,13 +79,44 @@ header a{
     display: inline-block;
 }
 
+main{
+    background-color: white;
+}
+
+main h2{
+    font-weight: 700;
+    font-size: 16px;
+    line-height:1.5;
+    letter-spacing: 5px;
+    color: #010130;
+    opacity: 0.5; 
+    text-transform: uppercase;
+    margin: 0;
+}
+
+main h3{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.5;
+    color:#010130;
+    margin: 0;
+}
+
+main p{
+    font-style: normal;
+    font-weight:400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #010130;
+    opacity: 0.8;
+}
+
 footer{
     color:white;
     background-image: linear-gradient(rgba(1, 1, 48, 0.9), rgba(1, 1, 48, 0.9)),
         url('../images/vineyard.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 100px 0;
 }
 
 footer h3{
@@ -118,5 +162,23 @@ footer a{
 
     header h3{
         font-size: 12px;
+    }
+
+    .grid{
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .grid-2-columns {
+        text-align: center;
+    }
+
+    .img-responsive{
+        max-width: 80%;
+        border-radius: 5px;
+    }
+
+    section{
+        padding:30px 10px;
     }
 }
